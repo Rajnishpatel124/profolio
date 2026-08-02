@@ -6,7 +6,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, Environment, Center, Text3D } from '@react-three/drei';
 import * as THREE from 'three';
 
-// --- Types ---
+
 interface Project {
   id: string;
   title: string;
@@ -46,9 +46,7 @@ const PROJECTS: Project[] = [
   },
 ];
 
-// --- Components ---
 
-// --- 3D Components ---
 
 const IntroSwarm = ({ count = 20000 }) => {
   const meshRef = useRef<THREE.InstancedMesh>(null);
